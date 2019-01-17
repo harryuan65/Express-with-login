@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>已收集資料</h1>
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>開始工作年齡</th>
+            <th>希望退休年齡</th>
+            <th>想過_的人生</th>
+            <th>每年投資收益</th>
+            <th>保險(月)</th>
+            <th>是否購屋</th>
+            <th>於_歲</th>
+            <th>預估價</th>
+            <th>頭期</th>
+            <th>利率</th>
+            <th>年本攤</th>
+            <th>年收益</th>
+            <th>備用金</th>
+        </tr>
+        <% print.forEach(function(d) {%>
+            <tr>
+                <td>
+                    <%= d.Name  %>
+                </td>
+                <td>
+                    <%= d.WorkFromAge  %>
+                </td>
+                <td>
+                  <%= d.WantToRetiredAt  %>
+                 </td>
+                <td>
+                 <%= d.WantLifeLike  %>
+                </td>
+                <td>
+                  <%= d.InvestAnnualIncome  %>
+                </td>
+                <td>
+                  <%= d.InsurancePMonth  %>
+                </td>
+                <td>
+                  <%= d.RealEstate  %>
+                </td>
+                <td>
+                  <%= d.reAge  %>
+                </td>
+                <td>
+                  <%= d.rePredictedPrice  %>
+                </td>
+                <td>
+                  <%= d.reFirstTerm  %>
+                </td>
+                <td>
+                  <%= d.reInterestRate  %>
+                </td>
+                 <td>
+                  <%= d.reAnnualBooth  %>
+                </td>
+                <td>
+                  <%= d.rtAnnualIncome  %>
+                </td>
+                <td>
+                  <%= d.rtReserveFund  %>
+                </td>
+            </tr>
+            <% })%>
+    </table>
+  </body>
+</html>
+

@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  border: 1px solid rgba(40,40,40,0.7);
+  font-family: "Microsoft JhengHei";
+}
+
+a {
+  color: #00B7FF;
+}
+
+th{
+  color:#ebebe3;
+  background-color: #2b2b28;
+  border: 1px solid black;
+}
+tr{
+  color:#33313b;
+  background-color: #ebebe3;
+}
+th,tr{
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
